@@ -61,7 +61,7 @@ p.city{
   min-height: 50vh;
 }
 
-#day-col{
+#day-one-col{
   font-size: 25px;
   background-color: rgb(61, 55, 55);
   padding: 20px;
@@ -72,5 +72,10 @@ p.city{
 
 .next-days{
   margin: 15px;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
 }
 /* col two ends */

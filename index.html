@@ -66,7 +66,7 @@
       <!-- col two starts -->
       <div class="col-lg-8 " id="col-two">
         <div class="col-two-content-one border border-dark">
-          <p class="city-info"><span class="current-city"><strong></strong></span></p>
+          <p class="city-info"><strong><span class="current-city"></strong></span></p>
           <p class="city-info">Temp: <span class="temp"></span></p>
           <p class="city-info">Wind: <span class="wind"></span></p>
           <p class="city-info">Humidity: <span class=" humidity"></span></p>
@@ -75,53 +75,58 @@
 
         <div class="col-two-content-two">
           <div class="row row-two">
-            <h2 class="d-flex w-100">5-Day Forecast:</h2>
+            <h2 class="d-flex w-100" >5-Day Forecast: <span class="current-city"></span></h2>
 
             <div class="row-two-col-context d-flex w-100">
               <!--row-two-col-one-->
-              <div class="col" id="day-col">
-                <div class="next-days" id="day">4/1/2022</div>
-                <div class="next-days" id="icon">asd</div>
-                <div class="next-days" id="temp">asd</div>
-                <div class="next-days" id="wind">asd</div>
-                <div class="next-days" id="humidity">asd</div>
+              <div class="col" id="day-one-col">
+                <ul class="day-weather">
+                  <li class="day-humidity"></li>
+                  <li class="day-temp"></li>
+                  <li class="day-wind"></li>
+                  <li class="day-ui-index"></li>
+                </ul>
               </div>
 
               <!--row-two-col-two-->
-              <div class="col" id="day-col">
-                <div class="next-days" id="day"> 30-02-1220</div>
-                <div class="next-days" id="icon">asd</div>
-                <div class="next-days" id="temp">asd</div>
-                <div class="next-days" id="wind">asd</div>
-                <div class="next-days" id="humidity">asd</div>
-              </div>
+                <div class="col" id="day-one-col">
+                  <ul class="day-weather">
+                    <li class="day-humidity"></li>
+                    <li class="day-temp"></li>
+                    <li class="day-wind"></li>
+                    <li class="day-ui-index"></li>
+                  </ul>
+                </div>
 
               <!--row-two-col-three-->
-              <div class="col" id="day-col">
-                <div class="next-days" id="day"> 30-02-1220</div>
-                <div class="next-days" id="icon">asd</div>
-                <div class="next-days" id="temp">asd</div>
-                <div class="next-days" id="wind">asd</div>
-                <div class="next-days" id="humidity">asd</div>
-              </div>
+                <div class="col" id="day-one-col">
+                    <ul class="day-weather">
+                      <li class="day-humidity"></li>
+                      <li class="day-temp"></li>
+                      <li class="day-wind"></li>
+                      <li class="day-ui-index"></li>
+                    </ul>
+                </div>
 
               <!--row-two-col-four-->
-              <div class="col" id="day-col">
-                <div class="next-days" id="day"> 30-02-1220</div>
-                <div class="next-days" id="icon">asd</div>
-                <div class="next-days" id="temp">asd</div>
-                <div class="next-days" id="wind">asd</div>
-                <div class="next-days" id="humidity">asd</div>
-              </div>
+                <div class="col" id="day-one-col">
+                  <ul class="day-weather">
+                    <li class="day-humidity"></li>
+                    <li class="day-temp"></li>
+                    <li class="day-wind"></li>
+                    <li class="day-ui-index"></li>
+                  </ul>
+                </div>
 
               <!--row-two-col-five-->
-              <div class="col" id="day-col">
-                <div class="next-days" id="day"> 30-02-1220</div>
-                <div class="next-days" id="icon">asd</div>
-                <div class="next-days" id="temp">asd</div>
-                <div class="next-days" id="wind">asd</div>
-                <div class="next-days" id="humidity">asd</div>
-              </div>
+                <div class="col" id="day-one-col">
+                  <ul class="day-weather">
+                    <li class="day-humidity"></li>
+                    <li class="day-temp"></li>
+                    <li class="day-wind"></li>
+                    <li class="day-ui-index"></li>
+                  </ul>
+                </div>
             </div>  
 
           </div>
@@ -142,6 +147,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <!--Moment.js  cdn-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
   <script src="./assets/js/app.js"></script>
 </body>
 </html>
