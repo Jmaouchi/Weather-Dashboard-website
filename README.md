@@ -7,25 +7,17 @@ This will give you the weather status on every city in USA
 # Built With
 - HTML
 - CSS
-- Portfolio
+- javaScript
 
 
 # Exmple
 
-<!-- ## Game started
-<!-- ![](assets/images/Starts.png) -->
-
-<!-- ## when is wrong
-![](assets/images/wrong.png)
-
-## when is correct
-![](assets/images/correct.png)
-
-## modal displayed
-![](assets/images/modal.png) --> -->
+## Weather App GIF 
+![](assets/images/readme.gif)
 
 
-# live link 
+# live link  
+https://jmaouchi.github.io/Weather-Dashboard/
 
 
 # Contribution
