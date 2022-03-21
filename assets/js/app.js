@@ -39,7 +39,7 @@ function getApi (city){
 
   if(city){
     // //API url to get the weather data
-    var requestUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city.value},us&appid=${apiKey}`;   
+    var requestUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city.value},us&appid=${apiKey}`;   
     fetch(requestUrl).then(function(response) {  // this will take the response and turn it to an object 
       // request was successful
       if (response.ok) {
