@@ -38,6 +38,7 @@ function getApi (city){
   return function(e) {
 
   if(city){
+    if (location.protocol === 'http:') {
     // //API url to get the weather data
     var requestUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city.value},us&appid=${apiKey}`;   
 
@@ -79,6 +80,7 @@ function getApi (city){
       console.error(error)
       alert("Unable to connect to weather");
     });
+  }
   } 
 };
 }
