@@ -67,18 +67,6 @@ function getApi (city){
           humidity.innerHTML = valueHumidityName;
           wind.innerHTML = valueWindName;
           temp.innerHTML = valueTempName;
-
-        
-        response.json().then(function(data){
-          console.log(`data for onecall is: ${data}`);
-          for (i=0; i<=5; i++){ 
-          // var fiveDayForecast = data.daily[i];
-          var hum = document.querySelector('.day-humidity');
-          hum.textContent = data.daily[0].clouds
-          
-          }
-         
-        });
         
         });
         
@@ -104,7 +92,16 @@ function getApiFiveDay(latitude, longitude) {
     fetch( oneCallUrl).then(function(response) {  // this will take the response and turn it to an object 
       // request was successful
       if (response.ok) {
-
+        response.json().then(function(data){
+          console.log(`data for onecall is: ${data}`);
+          for (i=0; i<=5; i++){ 
+          // var fiveDayForecast = data.daily[i];
+          var hum = document.querySelector('.day-humidity');
+          hum.textContent = data.daily[0].clouds
+          
+          }
+         
+        });
        
       }else {
         alert('Error: city User Not Found');
@@ -116,11 +113,6 @@ function getApiFiveDay(latitude, longitude) {
       alert("Unable to connect to weather");
     });
   }
-
-
-  function displayResult(){
-    
-  } 
 
 
 searchBtn.addEventListener('click', getApi(userInput));
