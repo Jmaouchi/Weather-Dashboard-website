@@ -103,9 +103,9 @@ function getApiFiveDay(latitude, longitude) {
 
             document.querySelector('.day-date_' + i).innerHTML = dailyDate;
             document.querySelector('.img_'+ i).src= `https://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}@2x.png`
-            document.querySelector('.day-humidity_' + i).innerHTML = data.daily[i].humidity + '%';
-            document.querySelector('.day-temp_' + i).innerHTML = data.daily[i].temp.day + 'F';
-            document.querySelector('.day-wind_' + i).innerHTML = data.daily[i].wind_speed + 'MPH';
+            document.querySelector('.day-humidity_' + i).innerHTML = data.daily[i].humidity + ' ' + '%';
+            document.querySelector('.day-temp_' + i).innerHTML = data.daily[i].temp.day + ' ' + 'F';
+            document.querySelector('.day-wind_' + i).innerHTML = data.daily[i].wind_speed + ' ' +'MPH';
             document.querySelector('.day-ui-index_' + i).innerHTML = data.daily[i].uvi;
           }        
         });
