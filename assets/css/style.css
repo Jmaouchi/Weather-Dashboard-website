@@ -17,9 +17,6 @@ button{
   font-size: 20px;
 }
 
-.row-one{
-  min-height: 80vh;
-}
 
 #col-one{
   width: 100px;
@@ -55,27 +52,35 @@ p.city{
   font-size: 32px;
 }
 
+
+/* col-two-content-two starts */
 .col-two-content-two{
   margin-top:15px;
-  padding: 10px;
-  min-height: 50vh;
 }
 
-#day-one-col{
-  font-size: 25px;
-  background-color: rgb(61, 55, 55);
-  padding: 20px;
-  color: white;
-  margin: 15px;
-  min-height: 30vh;
+.day-weather-content{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 38, 37);
+  color: rgb(247, 235, 235);
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 100%;
 }
 
-.next-days{
-  margin: 15px;
+li{
+  margin-top: 10px;
 }
 
 li{
   text-decoration: none;
   list-style: none;
+}
+
+#span-space {
+  margin-left: 15px;
 }
 /* col two ends */
